@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#ee0e0e"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:textSize="50dp"
+        android:text="Register"
+        android:fontFamily="cursive"
+        android:padding="4dp"
+        android:id="@+id/head"
+        android:textAlignment="center"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/head"
+        android:fillViewport="true"
+        android:scrollbars="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="25dp"
+            android:paddingRight="25dp"
+            android:id="@+id/r5">
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/name"
+                    android:hint="Name"
+                    android:textCursorDrawable="@null"
+                    android:textColor="@color/primary_text_material_light"
+                    android:padding="5dp"
+                    android:inputType="textPersonName"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginBottom="3dp"
+                    android:background="@drawable/register"
+                    app:errorTextAppearance="@style/error"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_email"
+                android:layout_below="@+id/input_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:id="@+id/email"
+                    android:textCursorDrawable="@null"
+                    android:textColor="@color/primary_text_material_light"
+                    android:padding="5dp"
+                    android:layout_centerHorizontal="true"
+                    android:hint="Email-Id"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginBottom="3dp"
+                    android:inputType="none"
+                    android:background="@drawable/register"
+                    android:editable="false"
+                     />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_contact"
+                android:layout_below="@+id/input_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:errorTextAppearance="@style/error">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:id="@+id/contact"
+                    android:layout_centerHorizontal="true"
+                    android:hint="Contact"
+                    android:textCursorDrawable="@null"
+                    android:textColor="@color/primary_text_material_light"
+                    android:padding="5dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginBottom="3dp"
+                    android:inputType="phone"
+                    android:background="@drawable/register"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/rl2"
+                android:layout_below="@+id/input_contact"
+                android:layout_marginTop="3dp">
+
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/radioGroup">
+
+                    <RadioButton
+                        android:text="MALE"
+                        android:textStyle="bold"
+                        android:textColor="#ffffff"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:id="@+id/radioButton" />
+
+                    <RadioButton
+                        android:text="FEMALE"
+                        android:textStyle="bold"
+                        android:textColor="#ffffff"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/radioButton2"
+                        android:checked="false"
+                        android:layout_below="@+id/radioButton" />
+
+                </RadioGroup>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center|right"
+                android:layout_below="@+id/input_contact">
+
+                <Spinner
+                    android:id="@+id/spinner"
+                    style="@style/spinner_style"
+                    android:layout_gravity="center"/>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/rl2"
+                android:id="@+id/rl4">
+
+                <android.support.design.widget.TextInputLayout
+                        android:id="@+id/input_city"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                    app:errorTextAppearance="@style/error">
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp"
+                            android:id="@+id/city"
+                            android:layout_marginTop="3dp"
+                            android:layout_marginBottom="3dp"
+                            android:hint="City"
+                            android:textCursorDrawable="@null"
+                            android:textColor="@color/primary_text_material_light"
+                            android:inputType="text"
+                            android:padding="5dp"
+                            android:background="@drawable/register"/>
+
+                    </android.support.design.widget.TextInputLayout>
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/input_state"
+                        android:layout_below="@+id/input_city"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:errorTextAppearance="@style/error">
+
+                        <AutoCompleteTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp"
+                            android:id="@+id/state"
+                            android:hint="State"
+                            android:textCursorDrawable="@null"
+                            android:textColor="@color/primary_text_material_light"
+                            android:layout_marginTop="3dp"
+                            android:layout_marginBottom="3dp"
+                            android:padding="5dp"
+                            android:inputType="text"
+                            android:layout_below="@+id/city"
+                            android:background="@drawable/register" />
+
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/input_diseases"
+                        android:layout_below="@+id/input_state"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:errorTextAppearance="@style/error">
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp"
+                            android:id="@+id/diseases"
+                            android:layout_marginTop="3dp"
+                            android:layout_marginBottom="3dp"
+                            android:hint="Diseases"
+                            android:textCursorDrawable="@null"
+                            android:textColor="@color/primary_text_material_light"
+                            android:inputType="text"
+                            android:padding="5dp"
+                            android:background="@drawable/register"/>
+
+                    </android.support.design.widget.TextInputLayout>
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/input_age"
+                    android:layout_below="@+id/input_diseases"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:errorTextAppearance="@style/error">
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:id="@+id/dob"
+                        android:layout_marginTop="3dp"
+                        android:layout_marginBottom="3dp"
+                        android:hint="Age"
+                        android:textCursorDrawable="@null"
+                        android:textColor="@color/primary_text_material_light"
+                        android:inputType="date"
+                        android:padding="5dp"
+                        android:background="@drawable/register"/>
+
+                </android.support.design.widget.TextInputLayout>
+
+
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+            <Button
+                android:layout_below="@+id/r5"
+                android:text="Submit"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:id="@+id/button"
+                android:layout_marginTop="7dp"
+                android:textSize="20dp"
+                android:textColor="#ee0e0e"
+                android:background="#ffffff"
+                android:layout_alignParentBottom="true"/>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
+    <!--
+            android:background="#B5540202"-->

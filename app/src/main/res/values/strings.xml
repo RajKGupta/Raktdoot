@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Raktdoot</string>
+    <string name="google_status_fmt">Google User: %s</string>
+    <string-array name="group">
+        <item>AB-</item>
+        <item>A-</item>
+        <item>A+</item>
+        <item>B-</item>
+        <item>B+</item>
+        <item>O+</item>
+    </string-array>
+
+</resources>

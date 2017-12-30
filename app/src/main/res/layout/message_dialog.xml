@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:background="@drawable/bg"
+    android:layout_centerHorizontal="true"
+    android:layout_centerInParent="true">
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/Name"
+        android:textSize="20sp"
+        android:padding="5dp"
+        android:hint="Name"
+        android:background="@drawable/register"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:ems="10"
+        android:id="@+id/Message"
+        android:textSize="20sp"
+        android:padding="5dp"
+        android:hint="Message"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/register"
+        android:layout_centerVertical="true"
+        android:layout_below="@+id/Name" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:id="@+id/Contact"
+        android:layout_marginTop="10dp"
+        android:textSize="20sp"
+        android:padding="5dp"
+        android:hint="Contact Number"
+        android:layout_below="@+id/Message"
+        android:background="@drawable/register"
+        android:inputType="phone" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Send Message"
+        android:id="@+id/sendM"
+        android:layout_below="@+id/Contact"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"/>
+
+</RelativeLayout>

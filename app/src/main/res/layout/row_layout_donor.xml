@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:padding="8dp">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:background="#A4ffffff">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/l1">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/name"
+                    android:textColor="#ee0e0e"
+                    android:textStyle="bold"
+                    android:textSize="15dp"
+                    android:layout_marginTop="5dp"
+                    android:text="Sender"
+                    android:gravity="left"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:id="@+id/bloodG"
+                    android:textStyle="bold"
+                    android:textSize="15dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:textColor="#ee0e0e"
+                    android:text="Message"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_below="@+id/l1">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/city"
+                        android:textStyle="bold"
+                        android:textSize="15dp"
+                        android:textColor="#ee0e0e"
+                        android:text="City"
+                        android:layout_marginTop="7dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/state"
+                            android:textStyle="bold"
+                            android:textSize="15dp"
+                            android:textColor="#ee0e0e"
+                            android:text="State"
+                            android:layout_marginLeft="6dp"
+                            android:layout_marginTop="7dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            />
+
+                    </LinearLayout>
+                    <Button
+                        android:text="Send Request"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentEnd="true"
+                        android:id="@+id/sendRequest"
+                        android:layout_alignParentTop="true"
+                        android:background="#ee0e0e"
+                        android:textColor="#ffffff"
+                        android:padding="5dp" />
+
+                </RelativeLayout>
+            </LinearLayout>
+        </RelativeLayout>
+
+</android.support.v7.widget.CardView>

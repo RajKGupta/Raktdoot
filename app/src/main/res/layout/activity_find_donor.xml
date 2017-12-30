@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical"
+    android:background="@drawable/bg"
+tools:context="com.example.rajk.raktdoot.findDonor">
+
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:id ="@+id/donor_list"
+        android:layout_height="match_parent"
+        android:clickable="true"></android.support.v7.widget.RecyclerView>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/l"
+        android:weightSum="1">
+
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/input1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_weight="0.5">
+
+                <EditText
+                    android:id="@+id/search_bg"
+                    android:hint="Blood Group"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:padding="4dp"
+                    android:textCursorDrawable="@null"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/register"
+                    android:clickable="true" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/input2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_weight="0.5">
+
+                <EditText
+                    android:id="@+id/search_state"
+                    android:hint="State"
+                    android:padding="4dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/register"
+                    android:textCursorDrawable="@null"
+                    android:clickable="true" />
+
+        </android.support.design.widget.TextInputLayout>
+
+
+    </LinearLayout>
+    <Button
+        android:text="Search"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:id="@+id/button"
+        android:textSize="20dp"
+        android:textColor="#ee0e0e"
+        android:background="#ffffff"
+        android:textStyle="bold"
+        android:layout_alignParentBottom="true">
+    </Button>
+
+</RelativeLayout>
